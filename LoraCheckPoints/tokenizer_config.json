@@ -1,0 +1,63 @@
+{
+  "add_bos_token": false,
+  "add_eos_token": false,
+  "add_prefix_space": true,
+  "added_tokens_decoder": {
+    "0": {
+      "content": "<unk>",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "1": {
+      "content": "<s>",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "2": {
+      "content": "</s>",
+      "lstrip": false,
+      "normalized": true,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "77185": {
+      "content": "<eod>",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    },
+    "77187": {
+      "content": "<sep>",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "special": true
+    }
+  },
+  "bos_token": "<s>",
+  "chat_template": "{% for message in messages %}{% if message['role'] == 'system' %}{{ message['content'].strip() + '\\n' }}{% elif message['role'] == 'user' %}{{ message['content'].strip() + (sep_token if loop.last else '<n>') }}{% elif message['role'] == 'assistant' %}{{ message['content'].strip() + (sep_token if loop.last else '<n>') }}{% endif %}{% endfor %}",
+  "clean_up_tokenization_spaces": false,
+  "eod_token": "<eod>",
+  "eos_token": "<eod>",
+  "legacy": true,
+  "model_max_length": 1000000000000000019884624838656,
+  "pad_token": "<eod>",
+  "padding_side": "right",
+  "sep_token": "<sep>",
+  "sp_model_kwargs": {},
+  "spaces_between_special_tokens": false,
+  "split_special_tokens": false,
+  "tokenizer_class": "LlamaTokenizer",
+  "unk_token": "<unk>",
+  "use_default_system_prompt": false
+}
