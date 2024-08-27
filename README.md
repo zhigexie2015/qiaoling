@@ -11,8 +11,8 @@
 
 4.下载本仓库./LoraCheckPoints 里面的所有文件，存储到本机。
 
-4.将推理配置文件yuan2b_lora_sft.yaml拷贝到./LLaMA-Factory/examples/inference/。修改Lora的路径和yuan2.0-2B的路径为本机路径。
+5.将推理配置文件yuan2b_lora_sft.yaml拷贝到./LLaMA-Factory/examples/inference/。修改Lora的路径和yuan2.0-2B的路径为本机路径。
 
-5.运行推理命令llamafactory-cli webchat examples/inference/yuan2b_lora_sft.yaml。 
+6.运行推理命令llamafactory-cli webchat examples/inference/yuan2b_lora_sft.yaml。 
 
-6.默认在本机浏览器打开http://0.0.0.0:7860/，即可进行脑筋急转弯问答。
+7.默认在本机浏览器打开http://0.0.0.0:7860/，即可进行脑筋急转弯问答。
