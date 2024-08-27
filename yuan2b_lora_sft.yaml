@@ -1,0 +1,4 @@
+model_name_or_path: /home/XXX/Downloads/yuan2B
+adapter_name_or_path: /home/XXX/Downloads/yuan2B/checkpoints_question_answer/checkpoint-795
+template: yuan
+finetuning_type: lora
