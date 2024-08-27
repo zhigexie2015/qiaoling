@@ -2,6 +2,7 @@
  巧灵脑筋急转弯大模型-基于yuan-2模型LORA微调后的脑筋急转弯大模型
 
 部署方法
+
 1.下载llama factory代码。https://github.com/hiyouga/LLaMA-Factory
  
 2.安装相关依赖，安装llama factory相关命令。 享
